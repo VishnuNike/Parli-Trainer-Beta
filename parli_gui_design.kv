@@ -1,0 +1,147 @@
+#:import datetime datetime
+
+<MainWidget>:
+    drop_content: drop_content.__self__
+    BoxLayout: 
+
+        orientation: 'vertical'
+        Label:
+            id: mainl
+            text: (str(datetime.timedelta(seconds=root.number)))[3:7]
+            font_size: 160
+            markup: True
+            halign: 'center' 
+            valign: 'middle'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            padding: [20, 20, 20, 10]
+            spacing: 20
+            height: 160
+            size_hint: (1, None)
+
+            TextInput:
+                id: input
+                font_size: 12
+                hint_text: 'Resolution: '
+
+        BoxLayout:
+            orientation: 'horizontal'
+            padding: [20, 10, 20, 20]
+            spacing: 20
+            height: 90
+            size_hint: (1, None)       
+            Button:
+                id: starpper
+                text: 'Start'
+                font_size: 25
+                background_normal: 'green_normal.png'
+                background_down: 'green_down.png'
+                on_press: root.start_stop()
+                border: (2,2,2,2)
+
+            Button:
+                text: 'Reset'
+                font_size: 25
+                background_normal: 'blue_normal.png'
+                background_down: 'blue_down.png'
+                on_press: root.reset()
+                border: (2,2,2,2)
+
+
+            Button:
+                id: btn
+                background_normal: 'yellow_down.png'
+                background_down: 'yellow_normal.png'
+                text: "Speeches"
+                font_size: 25
+                border: (2,2,2,2)
+                on_parent: drop_content.dismiss()
+                on_release: drop_content.open(self)
+
+            Button:
+                id: toss
+                text: 'Toss'
+                font_size: 25
+                background_normal: 'grey_normal.png'
+                background_down: 'grey_down.png'
+                border: (2,2,2,2)
+                on_press: root.toss()
+
+            Button:
+                text: 'Random'
+                font_size: 25
+                background_normal: 'purple_normal.png'
+                background_down: 'purple_down.png'
+                border: (2,2,2,2)
+                on_press: root.random_res()
+
+        DropDown:
+            id: drop_content
+            on_select: btn.text = '{}'.format(args[1])
+
+            Button:
+                id: btn1
+                text: 'PMC'
+                on_release: drop_content.select('PMC')
+                on_press: root.set(420)
+                size_hint_y: None
+                height: 35
+                border: (2,2,2,2)
+                background_normal: 'black_normal.png'
+                background_down: 'black_down.png'
+
+            Button:
+                id: btn2
+                text: 'LOC'
+                color: 0,0,0,1
+                size_hint_y: None
+                height: 35
+                on_release: drop_content.select('LOC')
+                on_press: root.set(480)
+                background_normal: 'white_normal.png'
+                background_down: 'white_down.png'
+
+            Button:
+                id: btn3
+                text: 'MOG'
+                size_hint_y: None
+                height: 35
+                on_release: drop_content.select('MOG')
+                on_press: root.set(480)
+                border: (2,2,2,2)
+                background_normal: 'black_normal.png'
+                background_down: 'black_down.png'
+
+            Button:
+                id: btn4
+                text: 'MOO'
+                color: 0,0,0,1
+                size_hint_y: None
+                height: 35
+                on_release: drop_content.select('MOO')
+                on_press: root.set(480)
+                background_normal: 'white_normal.png'
+                background_down: 'white_down.png'
+
+            Button:
+                id: btn5
+                text: 'LOR'
+                color: 0,0,0,1
+                size_hint_y: None
+                height: 35
+                on_release: drop_content.select('LOR')
+                on_press: root.set(240)
+                background_normal: 'white_normal.png'
+                background_down: 'white_down.png'
+
+            Button:
+                id: btn6
+                text: 'PMR'
+                size_hint_y: None
+                height: 35
+                on_release: drop_content.select('PMR')
+                on_press: root.set(300)
+                border: (2,2,2,2)
+                background_normal: 'black_normal.png'
+                background_down: 'black_down.png'
