@@ -4,6 +4,8 @@ An application dedicated towards Parliamentary Debate judges that primarily gene
 # Use
 - Install the .exe file and all .png files in the same folder
 - Double click the .exe file and enjoy :)
+OR
+- Install the folder which includes the .exe file and .png files all in one place :)
 
 # License
 MIT License - see LICENSE for more details
