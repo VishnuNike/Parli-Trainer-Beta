@@ -1,4 +1,4 @@
-# Parli-Trainer-GUI
+# Bellum Academy: Parli Trainer Beta
 An application dedicated towards Parliamentary Debate judges that primarily generates random machine-based resolutions and keeps track of the time between each speech
 
 # Use
