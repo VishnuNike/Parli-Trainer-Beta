@@ -9,5 +9,12 @@ OR
 
 - Install the folder which includes the .exe file and .png files all in one place :)
 
+# Use
+- Click the Start/Stop and Reset Buttons to track the time of each speech
+- Click the Speeches Button to access a dropdown list and select which speech you will be timing
+- Click the Toss Button to receive a randomly generated coin flip
+- Click the Random Button to recieve a randomized, machine-scraped resolution
+- Enter your own resolution if already provided
+
 # License
 MIT License - see LICENSE for more details
