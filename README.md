@@ -5,10 +5,6 @@ An application dedicated towards Parliamentary Debate judges that primarily gene
 - Install the .exe file and all .png files in the same folder
 - Double click the .exe file and enjoy :)
 
-OR
-
-- Install the folder which includes the .exe file and .png files all in one place :)
-
 # Use
 - Click the Start/Stop and Reset Buttons to track the time of each speech
 - Click the Speeches Button to access a dropdown list and select which speech you will be timing
